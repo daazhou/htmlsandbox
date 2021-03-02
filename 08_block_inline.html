@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inline vs Block</title>
+</head>
+<body>
+  <p style="border:2px green solid">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae debitis perspiciatis, quia eligendi corporis facere animi quod numquam <strong> vitae quam.</strong> Sed suscipit corporis est, vero animi id officia laudantium.</p> 
+  <!-- Strong is an inline -->
+  <p style="border:2px green solid">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum tempora reiciendis voluptates in odio dicta sunt natus cum enim necessitatibus?</p>
+  <!-- paragraph has its own styling because its block level -->
+  <a style="border:2px rgb(255, 0, 0) solid" href="#">A link</a>
+  <a style="border:2px blue solid"href="#" target="_blank">A link</a> 
+  <!-- inline, the link doesn't get pushed down -->
+  <!-- noted that styling in html is not recommended and its best to use css -->
+  <ul>
+    <li>Item</li>
+    <li>Item</li>
+  </ul>
+</body>
+</html>

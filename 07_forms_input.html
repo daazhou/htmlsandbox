@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forums and Input</title>
+</head>
+<body>
+  <form action="process.php">
+    <div> <!--text-->
+      <label for="name">Name</label>
+      <br>
+      <input type="text" id="name" name="name" placeholder="Enter your name">
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <br>
+      <input type="email" name="email" id="email" placeholder="Enter a valid email">
+    </div>
+    <br>
+        <div> <!--text-->
+      <label for="message">Message</label>
+      <br>
+      <textarea name="Message" id="Message" cols="30" rows="10" placeholder="Enter Message"></textarea>
+    </div>
+    <div> <!--select-->
+      <label for="sex">Sex</label> 
+      <br>
+      <select name="Sex" id="sex">
+      <option value="Male">Male</option>
+      <option value="Female" selected>Female</option> <!--selected can be used as well to be a preset-->
+      <option value="Other">Other</option>  
+     </select>
+    </div>
+    <div> <!--number-->
+      <label for="Age">Age</label> <br>
+      <input type="number" name="age" id="age"> <!--number field with arrow up-->
+    </div>
+    <div> <!--date-->
+      <label for="Date of Birth">Date of Birth</label>
+      <br>
+      <input type="date" name="Date of Birth" id="Date of Birth">
+    </div>
+    <div> <!--selector-->
+      <label for="membership">Membership</label>
+      <br>
+      <input type="radio" name="membership" value="simple" id="membership">Simple
+      <input type="radio" name="membership" value="standard" id="membership" checked>Standard <!--can be checked with a checked type-->
+      <input type="radio" name="membership" value="super" id="membership"> Super
+      
+    <!--butttons that have no labels can be created with the radio type-->
+    </div>
+    <div> <!-- checkbox-->
+<label for="membership">My preference of transportation</label>
+      <br> <!--can use ctrl+d to preselect the same name i.e radio to replace with check box, pretty cool-->
+      <input type="checkbox" name="likes" value="simple" id="bike">bike
+      <input type="checkbox" name="likes" value="standard" id="car" checked>car <!--can be checked with a checked type-->
+      <input type="checkbox" name="likes" value="super" id="bus"> bus
+    </div>
+    <input type="submit" value="Submit">
+    <!-- using button tag -->
+    <!-- <button type="submit">Submit</button> -->
+    <button type="reset">Reset</button> <!--reset button that resets the form-->
+  </form>
+</body>
+</html>

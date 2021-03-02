@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML5 Semenatic Tags</title>
+<style>
+  *{
+    box-sizing: border-box;
+  }
+  ul{
+    padding: 0;
+    list-style: none;
+  }
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    line-height: 1.4;
+  }
+
+  #header{
+    margin-bottom: 15px;
+    background: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  #sidebar{
+    float: right;
+    width: 29%
+  }
+  #main{
+    float: left;
+    width: 69%;
+  }
+  .clr{
+    clear: both;
+  }
+  #footer{
+    background: #333;
+    color: #fff;
+    padding: 10px;
+  }
+
+  .text-center{
+    display: block;
+    text-align: center;
+   
+  }
+  .card{
+    border: 1px solid #ddd;
+    background: #f4f4f4; 
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+  </style>
+  <head>
+<body>
+  <!-- header -->
+  <header id="header" class="card">
+    <h1>My Website</h1>
+    <p>Practice website</p>
+  </header>
+  <!-- main content (left) -->
+  
+  <main id="main">
+    <!-- Welcoming Station -->
+    <section id="welcome" class="card">
+      <h2>Welcome to my first practice website</h2>
+      <p>
+        Practing my development on starting a website   
+        <a href="#" class="text-center">Click for more</a>
+      </p>
+    </section>
+   
+    <!-- Blog Section -->
+    <section id="blog">
+      <h2>From my blog</h2>
+      <!-- Article one -->
+      <article id="article">
+      <h3>Article one</h3>
+      <p>Dam this is kinda confusing but I gotta push through these cards</p>
+    </article>
+      <!-- Article two -->
+      <article id="article">
+      <h3>Article Two</h3>
+      <p>I wonder when I'm going to actually start building my own website, this is definitely a start on basic HTML5 but what if I have to rent a server to actually host my own website. Need to impress and improve this is pretty interesting already. </p>
+     </article>
+    </section>
+  </main> 
+
+      <!-- Sidebar (right) -->
+      <aside id="sidebar" class="card">
+        <h3>Table of Contents</h3>
+        <!-- Navigation of Contents -->
+        <ul id="main-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <hr/>
+        <h3>Contact Me</h3>
+        <ul>
+          <li><strong>Address:</strong>San Francisco, CA</li>
+          <li><strong>Phone:</strong>(415)-510-3145</li>
+          <li><strong>Email:</strong>dzhou@gmail.com</li>
+        </ul>
+    
+      </aside>
+          <div class="clr"></div>
+        <!-- Footer (bottom of the page) -->
+        <footer id="footer">
+          <p class="text-center">Copyright &copy; Eggsite 2021</p>
+        </footer>
+
+    </body>
+  </head>
+</html>
+
+<!-- Semantics like main footer section aside header can replace the function div, the div function technically just acts as a function placeholder for the semantics like main where the main header can be written more fluidly -->

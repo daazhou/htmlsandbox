@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Div, span, id, class</title>
+</head>
+<!-- card style where the background has a border -->
+<style> 
+  .card{
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+
+  .enhance{
+    color: yellow;
+    background-color: black;
+  }
+</style>
+<body>
+  <div id="main-header"> <!-- important to not repeat IDs on the same page-->
+    <h1>My Website</h1>
+    <p>A site about me</p>
+  </div>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+    <div id="about" class="card"> <!--can put a #about and a div would pop up, useful shortcut-->
+    <h3>about</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi quis aliquid aliquam, reiciendis provident suscipit explicabo libero fuga? Libero, voluptates blanditiis. <span class="enhance">Repellendus cupiditate expedita fuga commodi tenetur quidem facere quae,</span> voluptas neque nobis natus distinctio impedit magni aliquam corporis vitae alias recusandae quis. Consequatur possimus pariatur commodi, temporibus sapiente quis?</p> 
+    <!-- span styling is inline while div styling is block level -->
+    </div>
+    <div id="contact" class="card">
+    <h3>contact me</h3>
+    <ul>
+      <li>address</li>
+      <li>phone number</li>
+      <li>email</li>
+    </ul>
+  </div>
+    <div id="footer">
+      <p>Copyright &copy; 2021</p>
+    </div>
+  </body>
+</html>
